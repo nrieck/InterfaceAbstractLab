@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  */
 public class IntroToProgrammingCourse {
     private String courseName;
-    String courseNumber;
+    private String courseNumber;
     private double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {

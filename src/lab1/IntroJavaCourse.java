@@ -50,6 +50,7 @@ public class IntroJavaCourse {
         return prerequisites;
     }
 
+    // no validation because course doesn't have prerequisites
     public void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
