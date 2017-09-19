@@ -8,10 +8,11 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse implements WebAndSoftwareDevelopmentClasses{
     private String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
         this.setCourseName(courseName);
@@ -29,6 +30,14 @@ public class IntroToProgrammingCourse {
             System.exit(0);
         }
         this.courseNumber = courseNumber;
+    }
+
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
     }
 
     public double getCredits() {
@@ -55,6 +64,11 @@ public class IntroToProgrammingCourse {
             System.exit(0);
         }
         this.courseName = courseName;
+    }
+  
+    @Override
+    public String getTeacherName() {
+        
     }
 
     

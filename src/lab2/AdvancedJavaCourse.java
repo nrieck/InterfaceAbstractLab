@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class AdvancedJavaCourse {
+public class AdvancedJavaCourse implements WebAndSoftwareDevelopmentClasses{
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -69,6 +69,12 @@ public class AdvancedJavaCourse {
             System.exit(0);
         }
         this.courseName = courseName;
+    }
+
+    @Override
+    public String getTeacherName() {
+        System.out.println("Advanced java Teacher 1");
+        return null;
     }
 
     

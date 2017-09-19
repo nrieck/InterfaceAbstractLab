@@ -6,8 +6,9 @@ package lab2;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse implements WebAndSoftwareDevelopmentClasses{
+    // 
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -40,6 +41,20 @@ public class IntroJavaCourse {
     public void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    @Override
+    public String getTeacherName() {
+        System.out.println("IntroJava Teacher 1");
+    }
+
 
     
 }
