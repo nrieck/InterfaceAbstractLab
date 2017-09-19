@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroJavaCourse {
+public class IntroJavaCourse extends WebAndSoftwareDevelopmentClasses{
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -17,6 +17,11 @@ public class IntroJavaCourse {
     public IntroJavaCourse(String courseName, String courseNumber) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
+    }
+    
+    @Override
+    public void getTeacherNames() {
+        System.out.println("Teacher 1 Intro Java");
     }
 
     public String getCourseNumber() {
